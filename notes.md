@@ -1,0 +1,13 @@
+## Random Links
+- https://mobile.awsblog.com/post/TxBVEDL5Z8JKAC/Use-Amazon-Cognito-in-your-website-for-simple-AWS-authentication
+- https://github.com/aws/amazon-cognito-identity-js/blob/0f2883065715455c64d40eb286dbe14dbf3d9d97/dist/aws-cognito-sdk.js
+- https://github.com/aws/amazon-cognito-identity-js/blob/f23673b2844d4c51faef17119208d3581f7bf4c6/src/CognitoUserPool.js
+- https://github.com/aws/amazon-cognito-identity-js/blob/0f2883065715455c64d40eb286dbe14dbf3d9d97/dist/aws-cognito-sdk.js
+- https://github.com/aws/amazon-cognito-identity-js/blob/0f2883065715455c64d40eb286dbe14dbf3d9d97/dist/aws-cognito-sdk.js
+- https://github.com/aws/amazon-cognito-identity-js
+- https://blogs.aws.amazon.com/javascript/post/TxTUNTVES4AL15/Authentication-in-the-Browser-with-Amazon-Cognito-and-Public-Identity-Providers
+- http://docs.aws.amazon.com/AWSJavaScriptSDK/guide/browser-configuring.html
+- http://stackoverflow.com/questions/31690026/access-to-identity-my-identity-that-exists-in-cognito-identity-browser-is-forb
+- https://github.com/aws/amazon-cognito-identity-js/blob/f23673b2844d4c51faef17119208d3581f7bf4c6/src/CognitoUser.js
+- https://github.com/aws/amazon-cognito-identity-js/blob/f23673b2844d4c51faef17119208d3581f7bf4c6/src/CognitoUserPool.js
+- https://github.com/aws/amazon-cognito-identity-js/blob/f23673b2844d4c51faef17119208d3581f7bf4c6/src/AuthenticationDetails.js
