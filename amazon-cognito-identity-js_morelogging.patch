@@ -1,0 +1,48 @@
+diff --git a/dist/aws-cognito-sdk.js b/dist/aws-cognito-sdk.js
+index ddf1b8c..ea52f94 100644
+--- a/dist/aws-cognito-sdk.js
++++ b/dist/aws-cognito-sdk.js
+@@ -65,10 +65,12 @@ AWS.Config = AWS.util.inherit({
+     }
+ 
+     function getAsyncCredentials() {
++        console.log('Calling: getAsyncCredentials()');
+       self.credentials.get(function(err) {
+         if (err) {
+           var msg = 'Could not load credentials from ' +
+             self.credentials.constructor.name;
++          console.log(msg);
+           err = credError(msg, err);
+         }
+         finish(err);
+@@ -76,6 +78,7 @@ AWS.Config = AWS.util.inherit({
+     }
+ 
+     function getStaticCredentials() {
++        console.log('Calling: getStaticCredentials()');
+       var err = null;
+       if (!self.credentials.accessKeyId || !self.credentials.secretAccessKey) {
+         err = credError('Missing credentials');
+@@ -84,12 +87,14 @@ AWS.Config = AWS.util.inherit({
+     }
+ 
+     if (self.credentials) {
++        console.log('Credentials already set...');
+       if (typeof self.credentials.get === 'function') {
+         getAsyncCredentials();
+       } else { // static credentials
+         getStaticCredentials();
+       }
+     } else if (self.credentialProvider) {
++        console.log('Credential provider set...');
+       self.credentialProvider.resolve(function(err, creds) {
+         if (err) {
+           err = credError('Could not load credentials from any providers', err);
+@@ -98,6 +103,7 @@ AWS.Config = AWS.util.inherit({
+         finish(err);
+       });
+     } else {
++        console.log('No creds to load...');
+       finish(credError('No credentials to load'));
+     }
+   },
